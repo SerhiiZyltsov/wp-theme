@@ -8,10 +8,13 @@
 @import "./components/header";
 @import "./components/nav";
 @import "./components/intro";
-@import "./components/tags";
+@import "./components/posts";
+@import "./components/sidebar";
 
 
 
 // подключение компонентов страницы (большие компоненты)
 @import "./components/btn";
 @import "./components/warning";
+@import "./components/tags";
+@import "./components/article";
