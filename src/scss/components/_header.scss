@@ -3,8 +3,16 @@
   padding: 40px 0;
 
   &__container {
-    @include flex-all-sb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+
 
   &__btns {
     .btn {

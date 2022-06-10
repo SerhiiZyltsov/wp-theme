@@ -7,9 +7,11 @@
 // подключение компонентов страницы (большие компоненты)
 @import "./components/header";
 @import "./components/nav";
+@import "./components/intro";
+@import "./components/tags";
 
 
 
 // подключение компонентов страницы (большие компоненты)
-@import "./components/warning";
 @import "./components/btn";
+@import "./components/warning";
