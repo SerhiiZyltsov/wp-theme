@@ -10,10 +10,11 @@
 @import "./components/intro";
 @import "./components/posts";
 @import "./components/sidebar";
+@import "./components/sidebar-block";
 
 
 
-// подключение компонентов страницы (большие компоненты)
+// подключение компонентов страницы (малые компоненты)
 @import "./components/btn";
 @import "./components/warning";
 @import "./components/tags";

@@ -1,1 +1,8 @@
-.sidebar {}
+.sidebar {
+  max-width: 340px;
+  padding-left: 10px;
+
+  &__search {
+    margin-bottom: 32px;
+  }
+}
