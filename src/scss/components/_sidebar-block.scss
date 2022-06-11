@@ -11,23 +11,49 @@
     font-size: 24px;
     line-height: 2.5;
     color: var(--dark-color);
-    background-image: url("../img/announce.png");
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 60px 60px;
+
+    &--announce {
+      background-image: url("../img/announce.png");
+    }
+
+    &--popular {
+      background-image: url("../../img/posts.png");
+    }
   }
 
 
   &__item {
-    color: var(--accent-color);
+    position: relative;
+    padding-left: 10px;
 
     &:not(:last-child) {
       margin-bottom: 15px;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 5px;
+      height: 5px;
+      background-color: var(--accent-color);
+      border-radius: 100%;
     }
   }
 
   &__link {
     line-height: 1.6;
     color: var(--tuna-color);
+    transition: color 0.2s linear;
+
+    &:hover {
+      color: var(--gray-color);
+    }
   }
+
+
 }
