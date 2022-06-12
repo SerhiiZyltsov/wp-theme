@@ -69,13 +69,6 @@
     }
   }
 
-  &--medium {
-    width: 205px;
-  }
-
-  &--large {
-    width: 260px;
-  }
 }
 
 .btn-close {
@@ -99,4 +92,27 @@
     }
   }
 
+}
+
+.info-btn {
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  transition: color 0.2s linear;
+
+  &__img {
+    display: block;
+    width: 10px;
+    height: 15px;
+    margin-left: 17px;
+    fill: currentColor;
+  }
+
+  &:hover {
+    color: var(--gray-color);
+  }
 }

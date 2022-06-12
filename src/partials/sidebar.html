@@ -7,7 +7,7 @@
   </form>
 
   <div class="sidebar__announce sidebar-block">
-    <h2 class="sidebar-block__title sidebar-block__title--announce">Announcements</h2>
+    <h2 class="sidebar-block__title sidebar-block__title--announce title">Announcements</h2>
     <ul class="sidebar-block__list list-reset">
       <li class="sidebar-block__item">
         <a class="sidebar-block__link" href="#">
@@ -39,7 +39,7 @@
   </div>
 
   <div class="sidebar__popular sidebar-block">
-    <h2 class="sidebar-block__title sidebar-block__title--popular">Popular posts</h2>
+    <h2 class="sidebar-block__title sidebar-block__title--popular title">Popular posts</h2>
     <ul class="sidebar-block__list list-reset">
       <li class="sidebar-block__item">
         <a class="sidebar-block__link" href="#">
@@ -70,12 +70,25 @@
     </ul>
   </div>
 
-  <div class="sidebar__banner">
-    <a class="sidebar__banner-link" href="#">
+  <div class="sidebar__banner banner">
+    <a class="banner__link" href="#">
       <picture>
         <source srcset="img/banner.avif" type="image/avif">
         <source srcset="img/banner.webp" type="image/webp">
-        <img loading="lazy" src="img/banner.jpg" class="sidebar__banner-image" width="340" height="440" alt="banner">
+        <img loading="lazy" src="img/banner.jpg" class="banner__image" width="340" height="440" alt="banner">
+      </picture>
+    </a>
+  </div>
+
+  <div class="sidebar__tag-cloud tag-cloud">
+    <h2 class="tag-cloud__title title">
+      Tag cloud
+    </h2>
+    <a class="tag-cloud__link" href="#">
+      <picture>
+        <source srcset="img/tag-cloud.avif" type="image/avif">
+        <source srcset="img/tag-cloud.webp" type="image/webp">
+        <img loading="lazy" src="img/tag-cloud.jpg" class="tag-cloud__image" width="324" height="309" alt="tag link block">
       </picture>
     </a>
   </div>

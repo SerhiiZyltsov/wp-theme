@@ -4,22 +4,19 @@
   border-bottom: 1px solid #EBECED;
 
   &__title {
-    margin: 0;
     margin-bottom: 35px;
     padding-left: 80px;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 2.5;
-    color: var(--dark-color);
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 60px 60px;
 
     &--announce {
+      line-height: 2.5;
       background-image: url("../img/announce.png");
     }
 
     &--popular {
+      line-height: 2.5;
       background-image: url("../../img/posts.png");
     }
   }
