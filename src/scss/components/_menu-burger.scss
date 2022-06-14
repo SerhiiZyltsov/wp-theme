@@ -1,0 +1,8 @@
+.burger {
+  display: none;
+  @include burger;
+
+  @include high-tablet {
+    display: block;
+  }
+}

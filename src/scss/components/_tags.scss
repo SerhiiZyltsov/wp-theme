@@ -1,0 +1,74 @@
+.tags {
+  padding-bottom: 40px;
+
+  @include small-tablet {
+    display: none;
+  }
+
+  &__inner {
+    @include flex-all-sb;
+    padding: 21px 32px;
+    background-color: #F7F7F7;
+    border-radius: 4px;
+
+    @include high-tablet {
+      padding: 21px 12px;
+    }
+  }
+
+  &__сaption {
+    margin-right: 40px;
+    font-weight: 500;
+    line-height: 1.3;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--tuna-color);
+
+    @include high-desktop {
+      margin-right: 20px;
+    }
+
+    @include high-tablet {
+      margin-right: 8px;
+    }
+  }
+
+  &__link {
+    font-weight: 500;
+    line-height: 1.3;
+    text-transform: uppercase;
+    color: var(--accent-color);
+
+    &:not(:last-child) {
+      margin-right: 36px;
+
+      @include high-desktop {
+        margin-right: 20px;
+      }
+
+      @include high-tablet {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &__info {
+    font-weight: 500;
+    line-height: 1.3;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #323642;
+
+    &:not(:last-child) {
+      margin-right: 35px;
+
+      @include high-desktop {
+        margin-right: 20px;
+      }
+
+      @include high-tablet {
+        margin-right: 10px;
+      }
+    }
+  }
+}

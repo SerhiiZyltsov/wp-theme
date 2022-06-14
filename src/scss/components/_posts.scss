@@ -1,0 +1,39 @@
+.posts {
+  width: 66%;
+  margin-right: 20px;
+  padding-bottom: 70px;
+  border-right: 1px solid #EBECED;
+
+  @include high-tablet {
+    width: 100%;
+    border-right: none;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  &__inner {
+    margin-bottom: 40px;
+
+    @include mobile {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__item {
+    margin-bottom: 30px;
+
+    @include mobile {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__btn {
+    width: 260px;
+    display: block;
+    margin: 0 auto;
+  }
+
+}

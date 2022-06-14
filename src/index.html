@@ -7,10 +7,21 @@
   <div class="site-container">
     @include('partials/header.html')
     <main class="main">
+      @include('partials/intro.html')
+      @include('partials/tags.html')
+      @include('partials/search.html')
+      <div class="content-inner">
+        <div class="container content-inner__container">
+          @include('partials/posts.html')
+          @include('partials/sidebar.html')
+        </div>
+      </div>
+      @include('partials/tariffs.html')
 
     </main>
 
-    <!-- @include('partials/footer.html') -->
+    @include('partials/footer.html')
+    @include('partials/warning.html')
 
     <!-- @include('html/h1.html') пример include -->
 

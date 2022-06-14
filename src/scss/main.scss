@@ -6,8 +6,22 @@
 
 // подключение компонентов страницы (большие компоненты)
 @import "./components/header";
+@import "./components/nav";
+@import "./components/intro";
+@import "./components/posts";
+@import "./components/sidebar";
+@import "./components/sidebar-block";
+@import "./components/tariffs";
+@import "./components/footer";
 
 
 
-// подключение компонентов страницы (большие компоненты)
+// подключение компонентов страницы (малые компоненты)
+@import "./components/menu-burger";
 @import "./components/btn";
+@import "./components/warning";
+@import "./components/tags";
+@import "./components/article";
+@import "./components/search";
+@import "./components/tag-cloud";
+@import "./components/social";

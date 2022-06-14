@@ -1,0 +1,12 @@
+.intro {
+  padding-bottom: 30px;
+
+  &__inner {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  @include small-tablet {
+    padding-bottom: 40px;
+  }
+
+}

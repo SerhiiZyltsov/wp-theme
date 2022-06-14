@@ -1,0 +1,70 @@
+.header {
+  margin-top: 41px;
+  padding: 40px 0;
+
+  @include high-tablet {
+    .btn--green {
+      padding: 11px 15px;
+    }
+  }
+
+  @include small-tablet {
+    margin-top: 62px;
+    padding: 15px 0;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include high-tablet {
+      margin: 0 auto;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+
+    @include high-tablet {
+      margin-right: auto;
+      margin-left: 24px;
+    }
+
+    @include mobile-m {
+      width: 120px;
+      margin-left: 16px;
+    }
+  }
+
+
+  // &__btn {
+  //   margin-right: 10px;
+
+  //   @include high-tablet {
+  //     display: none;
+  //   }
+  // }
+
+  &__btns {
+    @include flex;
+
+    .btn {
+      margin-right: 10px;
+
+      @include high-tablet {
+        display: none;
+      }
+    }
+
+    .btn--fill {
+      display: block;
+
+      @include mobile {
+        padding-right: 10px;
+        padding-left: 10px;
+      }
+    }
+  }
+}
