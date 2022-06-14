@@ -1,20 +1,57 @@
 .sidebar {
   max-width: 340px;
-  padding-left: 10px;
+  padding-bottom: 70px;
+
+  @include high-tablet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  @include mobile {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
 
   &__search {
-    margin-bottom: 32px;
+    margin-bottom: 28px;
+
+    @include high-tablet {
+      display: none;
+      margin-bottom: 0;
+    }
+
+    &--show {
+      display: block;
+
+    }
   }
 
   &__announce {
-    margin-bottom: 32px;
+    margin-bottom: 28px;
+
+    @include mobile {
+      margin-bottom: 60px;
+    }
   }
 
   &__popular {
     margin-bottom: 32px;
+
+    @include mobile {
+      margin-bottom: 30px;
+    }
   }
 
   &__banner {
-    margin-bottom: 52px;
+    margin-bottom: 46px;
+
+    @include mobile {
+      margin-bottom: 60px;
+    }
   }
+
+
 }

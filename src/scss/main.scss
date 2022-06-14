@@ -17,11 +17,11 @@
 
 
 // подключение компонентов страницы (малые компоненты)
+@import "./components/menu-burger";
 @import "./components/btn";
 @import "./components/warning";
 @import "./components/tags";
 @import "./components/article";
 @import "./components/search";
-@import "./components/banner";
 @import "./components/tag-cloud";
 @import "./components/social";

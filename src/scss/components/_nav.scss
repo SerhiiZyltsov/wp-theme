@@ -1,8 +1,15 @@
 .nav {
   margin-left: -10px;
+  z-index: 2;
+
 
   &__list {
     @include flex-v-center;
+
+    @include high-tablet {
+      flex-direction: column;
+      padding: 100px 0;
+    }
   }
 
   &__item {
@@ -34,6 +41,11 @@
     text-transform: uppercase;
     color: var(--tuna-color);
 
+    @include high-tablet {
+      display: block;
+      padding: 20px;
+    }
+
 
     &::after {
       content: '';
@@ -62,11 +74,29 @@
 
     &:hover {
 
-
       &:before {
         width: 100%;
         opacity: 1;
       }
     }
   }
+
+  @include high-tablet {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: var(--light-color);
+    transform: translateX(-300%);
+    transition: transform 0.3s ease-in-out;
+
+  }
+
+
+  &.active {
+    transform: translateX(0);
+  }
+
 }

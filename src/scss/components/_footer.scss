@@ -1,22 +1,104 @@
 .footer {
-  padding: 84px 0 90px;
+  padding: 78px 0 90px;
+
+  @include mobile {
+    padding: 44px 0 49px;
+  }
 
   &__logo {
     display: block;
-    margin-bottom: 58px;
+    margin-bottom: 54px;
   }
 
   &__inner {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    max-height: 356px;
+    justify-content: space-between;
+
+    @include small-tablet {
+      flex-direction: column;
+    }
+
   }
 
   &__holder {
-    &:nth-child(2) {
-      margin-bottom: 58px;
+    max-width: 150px;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 356px;
+    max-width: 358px;
+    width: 100%;
+
+    .footer__holder {
+      &:nth-child(2) {
+        margin-bottom: 65px;
+      }
     }
+
+    @include small-tablet {
+      margin: 0 auto;
+      margin-bottom: 35px;
+    }
+  }
+
+  &__right {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    width: 100%;
+
+    .footer__holder {
+      &:nth-child(1) {
+        margin-right: auto;
+      }
+    }
+  }
+
+  &__info {
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 40px;
+
+    @include high-desktop {
+      max-width: none;
+      margin-top: 40px;
+      margin-bottom: 0;
+      order: 1;
+    }
+  }
+
+  &__social {
+    max-width: 340px;
+
+    @include high-tablet {
+      max-width: 172px;
+
+      & .social {
+        margin-right: 0;
+
+        &__link {
+          margin-bottom: 27px;
+        }
+
+        @media(max-width: 374px) {
+          max-width: 142px;
+
+          &__item {
+            &:not(:last-child) {
+              margin-right: 16px;
+            }
+          }
+        }
+
+      }
+    }
+
+
+
   }
 
   &__subtitle {
@@ -29,11 +111,9 @@
     color: var(--tuna-color);
   }
 
-  &__list {}
-
   &__item {
     &:not(:last-child) {
-      margin-bottom: 20px;
+      margin-bottom: 9px;
     }
   }
 
@@ -44,27 +124,27 @@
 
   &__text {
     margin: 0;
+    margin-bottom: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.005px;
+    color: #889099;
   }
 
-  &__copy {}
-}
+  &__award {
+    margin: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.3;
+    color: #889099;
+  }
 
-.container {}
-
-.sr-only {}
-
-.header {
-
-  &__logo {}
-}
-
-.social {
-
-  &__item {}
-
-  &__link {}
-
-  &__link--fb {}
-
-  &__img {}
+  &__copy {
+    margin: 0;
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.3;
+    color: #889099;
+  }
 }

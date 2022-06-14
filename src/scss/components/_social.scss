@@ -1,0 +1,65 @@
+.social {
+  @include flex-v-center;
+  flex-wrap: wrap;
+
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 32px;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.4s linear;
+
+    &--fb {
+      width: 14px;
+      height: 28px;
+      background-image: url("../img/fb.png");
+      background-size: cover;
+    }
+
+    &--tw {
+      width: 28px;
+      height: 23px;
+      background-image: url("../img/tw.png");
+      background-size: cover;
+    }
+
+    &--gp {
+      width: 34px;
+      height: 22px;
+      background-image: url("../img/gp.png");
+      background-size: cover;
+    }
+
+    &--ld {
+      width: 28px;
+      height: 28px;
+      background-image: url("../img/ld.png");
+      background-size: cover;
+    }
+
+    &--rd {
+      width: 29px;
+      height: 29px;
+      background-image: url("../img/rd.png");
+      background-size: cover;
+    }
+
+    &--yt {
+      width: 42px;
+      height: 29px;
+      background-image: url("../img/yt.png");
+      background-size: cover;
+    }
+
+    &:hover {
+      transform: translateY(-4px);
+    }
+  }
+
+}

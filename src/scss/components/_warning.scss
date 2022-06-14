@@ -1,4 +1,5 @@
 .warning {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -11,10 +12,23 @@
     max-width: 664px;
     margin: 0 auto;
 
+    @include small-tablet {
+      padding: 0 38px 0 20px;
+      flex-wrap: wrap;
+    }
+
+  }
+
+  &__inner {
+    @include small-tablet {
+      order: 2;
+      margin: 0 auto;
+      margin-top: 5px;
+    }
   }
 
   &__info {
-    margin-left: 19px;
+    margin-left: 8px;
     padding-left: 28px;
     font-weight: 700;
     font-size: 12px;
@@ -24,6 +38,15 @@
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 26px 23px;
+
+    @include small-tablet {
+      padding-right: 80px;
+      margin-left: 0;
+    }
+
+    @include mobile-m {
+      padding-right: 0;
+    }
   }
 
   &__addr {
@@ -32,6 +55,15 @@
     font-size: 12px;
     line-height: 1.3;
     color: var(--gray-color);
+
+    @include small-tablet {
+      margin-right: 10px;
+    }
+
+    @include mobile-m {
+      margin-right: 5px;
+      font-size: 10px;
+    }
   }
 
   &__provider {
@@ -40,10 +72,13 @@
     line-height: 1.3;
     color: var(--gray-color);
 
+    @include mobile-m {
+      font-size: 10px;
+    }
   }
 
   &__link {
-    margin-right: 3px;
+    margin-right: 12px;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.3;
@@ -59,14 +94,23 @@
     &:hover {
       color: var(--gray-color);
     }
-
   }
 
   &__btn {
     position: absolute;
     top: 50%;
-    right: 20px;
+    right: 10px;
     transform: translateY(-50%);
+
+    @include small-tablet {
+      top: 10px;
+      right: 10px;
+      transform: translateY(0);
+    }
+  }
+
+  &.active {
+    display: block;
   }
 
 }

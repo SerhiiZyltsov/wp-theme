@@ -1,6 +1,10 @@
 .search-form {
   width: 340px;
 
+  @include high-tablet {
+    width: 100%;
+  }
+
   &__label {
     width: 100%;
   }
@@ -34,4 +38,5 @@
       box-shadow: 0px 0px 0px 1px rgba(67, 188, 6, 0.4);
     }
   }
+
 }

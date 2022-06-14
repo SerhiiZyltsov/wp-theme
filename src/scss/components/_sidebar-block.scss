@@ -1,10 +1,10 @@
 .sidebar-block {
-  width: 100%;
+  max-width: 340px;
   padding-bottom: 32px;
   border-bottom: 1px solid #EBECED;
 
   &__title {
-    margin-bottom: 35px;
+    margin-bottom: 22px;
     padding-left: 80px;
     background-repeat: no-repeat;
     background-position: left center;
@@ -43,6 +43,7 @@
   }
 
   &__link {
+    max-width: 330px;
     line-height: 1.6;
     color: var(--tuna-color);
     transition: color 0.2s linear;
